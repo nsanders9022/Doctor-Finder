@@ -20,13 +20,13 @@ $(document).ready(function() {
     event.preventDefault();
     $(".results ul").empty();
     var issue = $("#issue").val();
-    doctorArray = myDoctor.getDoctors(issue);
-    console.log(doctorArray);
+    doctorArray = myDoctor.getDoctors(issue, displayDoctor);
+    // console.log(doctorArray);
     $("#issue").val("");
     $(".results").show();
 
-    doctorArray.forEach(function(doctor) {
-      displayDoctor(doctor);
-    })
+    // doctorArray.forEach(function(doctor) {
+    //   displayDoctor(doctor);
+    // })
   })
 })
