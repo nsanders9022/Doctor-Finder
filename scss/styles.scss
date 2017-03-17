@@ -1,6 +1,33 @@
+$color : #d3d3d3;
+
+body {
+  background: $color;
+  font-family: monospace;
+
+}
+
+.results {
+  display: none;
+  ul li {
+    font-size: 20px;
+  }
+}
+
 .doctor-info {
   display: none;
-  h4 {
+  width: 70%;
+  margin-left: 15%;
+  h3 {
     font-style: italic;
   }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+  }
+}
+
+#name {
+  text-align: center;
+  font-weight: bold;
 }

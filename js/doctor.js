@@ -11,13 +11,12 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
     response.data.forEach(function(doctor) {
       doctorArray.push(doctor);
       // console.log(JSON.stringify(response));
-    })
+    });
   })
   .fail(function(error){
     $(".results").text("error");
   });
   return doctorArray;
 };
-
 
 exports.doctorModule = Doctor;

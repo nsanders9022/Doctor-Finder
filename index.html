@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="build/css/styles.css">
-    <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Doctor Look up</title>
-  </head>
-  <body>
-    <div class="container">
-      <h3>Find a doctor for your issue</h3>
-      <label for="issue">Enter your issue:</label>
-      <input type="text" name="issue" id="issue">
-      <button type="button" name="button" class= "search btn btn-primary">Search</button>
-      <div class="results">
-        <p>The doctors that can help you with your condition are:</p>
-        <ul id="name-list">
+<head>
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <link rel="stylesheet" href="build/css/styles.css">
+  <script src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <title>Doctor Look up</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Find a doctor for your medical needs</h2>
 
-        </ul>
-      </div>
-      <div class="doctor-info">
-        <h4>Gender</h4>
-        <p id="gender"></p>
-        <h4>Biography</h4>
-        <p id="bio"></p>
-      </div>
+    <div>
+      <form id="search-info" class="form-group">
+        <label for="issue">Enter your main issue or concern:</label>
+        <input type="text" name="issue" id="issue" class="form-control">
+        <button type="submit" name="button" class= "search btn btn-primary">Search</button>
+      </form>
     </div>
-  </body>
+
+    <div class="results">
+      <h3>The doctors that can help you with your medical needs are:</h3>
+      <ul id="name-list">
+      </ul>
+    </div>
+
+    <div class="doctor-info">
+      <h4 id="name"></h4>
+      <h4>Gender</h4>
+      <p id="gender"></p>
+      <h4>Biography</h4>
+      <p id="bio"></p>
+    </div>
+
+  </div>
+</body>
 </html>
