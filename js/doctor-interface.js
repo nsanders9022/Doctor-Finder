@@ -15,11 +15,10 @@ var displayDoctor = function(doctorData) {
 };
 
 $(document).ready(function() {
-  var myDoctor = new Doctor();
-  var doctorArray = [];
   $("form#search-info").submit(function(event) {
     event.preventDefault();
-    doctorArray = [];
+    var myDoctor = new Doctor();
+    var doctorArray = [];
     $(".results ul").empty();
     var issue = $("#issue").val();
     doctorArray = myDoctor.getDoctors(issue);
