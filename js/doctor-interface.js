@@ -21,7 +21,6 @@ $(document).ready(function() {
     event.preventDefault();
     doctorArray = [];
     $(".results ul").empty();
-    ;
     var issue = $("#issue").val();
     doctorArray = myDoctor.getDoctors(issue);
     $("#issue").val("");

@@ -11,7 +11,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
     doctorArray = [];
     response.data.forEach(function(doctor) {
       doctorArray.push(doctor);
-      console.log(JSON.stringify(response));
+      // console.log(JSON.stringify(response));
     });
   })
   .fail(function(error){
@@ -19,6 +19,5 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
   });
   return doctorArray;
 };
-
 
 exports.doctorModule = Doctor;
